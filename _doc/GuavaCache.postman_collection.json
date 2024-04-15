@@ -1,0 +1,115 @@
+{
+	"info": {
+		"_postman_id": "20aa6267-3ab1-4bb2-9116-b0d6c33b1250",
+		"name": "GuavaCache",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26469706"
+	},
+	"item": [
+		{
+			"name": "使用者登入",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"acc\": \"test01@gmail.com\",\r\n  \"pwd\": \"123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/GuavaCache/api/User/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"GuavaCache",
+						"api",
+						"User",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "取得使用者帳號",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"acc\": \"test01@gmail.com\",\r\n  \"pwd\": \"123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/GuavaCache/api/User/getUserAccount?token=gsmImAXK6R",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"GuavaCache",
+						"api",
+						"User",
+						"getUserAccount"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "gsmImAXK6R"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "printAllLoginTokens",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"acc\": \"test01@gmail.com\",\r\n  \"pwd\": \"123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/GuavaCache/api/User/printAllLoginTokens",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"GuavaCache",
+						"api",
+						"User",
+						"printAllLoginTokens"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

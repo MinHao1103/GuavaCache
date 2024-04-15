@@ -1,0 +1,19 @@
+# 忽略 Eclipse 的 .project 文件
+.project
+
+# 忽略 Gradle 的項目文件和設置目錄
+.gradle
+/.settings
+/.classpath
+
+# 忽略 IntelliJ IDEA 的配置目錄
+.idea
+
+# 忽略編譯生成的文件和目錄
+/bin
+/build
+
+# 忽略Gradle wrapper
+/gradlew.bat
+/gradlew
+/gradle
